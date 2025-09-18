@@ -3,10 +3,10 @@
 /**
  * Переворачивает буквенные символы в строке,
  * оставляя небуквенные символы на своих местах
- * @param $inputStr
+ * @param string $inputStr
  * @return string
  */
-function revertStr($inputStr): string
+function revertStr(string $inputStr): string
 {
     $pattern = '/(\p{L}+|[^\p{L}]+)/u';
     $wordPattern = '/^\p{L}+$/u';
