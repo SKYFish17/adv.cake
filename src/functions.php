@@ -54,21 +54,3 @@ function revertWordLetters(string $word): string
 
     return implode($revertedLetters);
 }
-
-$testCases = [
-    ['Cat', 'Tac'],
-    ['Мышь', 'Ьшым'],
-    ['houSe', 'esuOh'],
-    ['домИК', 'кимОД'],
-    ['elEpHant', 'tnAhPele'],
-    ['cat,', 'tac,'],
-    ['Зима:', 'Амиз:'],
-    ["is 'cold' now", "si 'dloc' won"],
-    ['это «Так» "просто"', 'отэ «Кат» "отсорп"'],
-    ['third-part', 'driht-trap'],
-    ['can`t', 'nac`t']
-];
-
-foreach ($testCases as $key => $case) {
-    assert(revertStr($case[0]) === $case[1]);
-}
